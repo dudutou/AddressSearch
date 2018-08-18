@@ -1,7 +1,6 @@
 require './lib/address_search'
 
 service = AddressSearch.new
-service.storage_path = "storage"
+service.storage_path = 'storage'
 
-# csvをダウンロード
-service.download_file
+service.create_index_file
