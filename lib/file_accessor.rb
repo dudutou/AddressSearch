@@ -27,7 +27,7 @@ class FileAccessor
   end
 
   def validate_file
-    File.exist?(build_csv_path) && File.exist?(build_index_path)
+    File.exist?(build_csv_folder_path) && File.exist?(build_csv_path) && File.exist?(build_index_path)
   end
   
   def build_csv_folder_path
